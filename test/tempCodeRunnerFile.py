@@ -1,6 +1,6 @@
-
 import pytest
 from .. import operaciones
+
 def test_sumar():
     assert operaciones.sumar(2,4) == 6
 
@@ -24,4 +24,3 @@ def test_restar_com_fixture(numeros):
 def test_sumar_con_fixture(numeros):
     a,b=numeros
     assert operaciones.sumar(a,b) == 10
-
